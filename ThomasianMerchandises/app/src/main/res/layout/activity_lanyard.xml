@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="myfirstapp.example.com.thomasianmerchandises.lanyard"
+    android:background="#7bffd924"
+    android:transitionGroup="false">>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lanyard"
+        android:id="@+id/textView"
+        android:textSize="40dp"
+        android:layout_alignTop="@+id/home_button"
+        android:textColor="#ffff8b05" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/lanyard1"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/lanyard2"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/lanyard3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/home_button"
+        android:textSize="10dp"
+        android:background="#ffffae25"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/logout_button"
+        android:onClick="buttonOnClickHome" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Log-out"
+        android:id="@+id/logout_button"
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffae25"
+        android:onClick="buttonOnClick"
+        android:layout_alignBottom="@+id/home_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:src="@drawable/item1"
+        android:layout_alignRight="@+id/logout_button"
+        android:layout_alignEnd="@+id/logout_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/item2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/item3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2" />
+
+
+
+</RelativeLayout>
